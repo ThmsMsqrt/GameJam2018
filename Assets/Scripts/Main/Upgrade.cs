@@ -11,4 +11,5 @@ public class Upgrade : ScriptableObject
     [Range(0.0f, 1.0f)]
     public float AlphaColor;
     public float Cost;
+    public float Multiplier;
 }
