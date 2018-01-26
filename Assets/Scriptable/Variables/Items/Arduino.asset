@@ -15,6 +15,6 @@ MonoBehaviour:
   Image: {fileID: 0}
   Description: 
   BasePrice: 400
-  PriceIncrease: 15
+  ActualPrice: 400
   StupidQuote: Tom Percheul
   NbItemsSold: 0
