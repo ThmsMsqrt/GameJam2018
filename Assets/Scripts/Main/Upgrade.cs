@@ -8,6 +8,8 @@ public class Upgrade : ScriptableObject
     public string Description;
     public string FluffText;
     public Sprite Sprite;
+    [Range(0.0f, 1.0f)]
     public float AlphaColor;
     public float Cost;
+    public float Multiplier;
 }
