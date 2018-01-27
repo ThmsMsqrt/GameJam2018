@@ -26,7 +26,6 @@ public class ScoreCalcul : MonoBehaviour {
     public void CalculateDPS()
     {
         float scoreToApply = basicClickValue;
-
         //Add factor calculation for the click
         scoreToApply *= DPC.Value;
         Score.ApplyChange(scoreToApply);
