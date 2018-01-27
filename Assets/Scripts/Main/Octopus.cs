@@ -6,35 +6,35 @@ namespace Assets.Scripts.Main
 {
     public class Octopus : MonoBehaviour
     {
-        public SpriteManager OctopusStates;
+        public AnimatorManager OctopusStates;
         public FloatReference DPS;
         public AudioManager AudioClips;
         private AudioSource _audio;
 
-        private Image ImageOctopus;
+        private Animator AnimatorOctopus;
         private int OctopusStateStart = 0;
         private float thresholdEvolve = 100f;
 
         public void Start()
         {
             _audio = GetComponent<AudioSource>();
-            ImageOctopus = GetComponent<Image>();
-            if (ImageOctopus != null)
+            AnimatorOctopus = GetComponent<Animator>();
+            if (AnimatorOctopus != null)
             {
-                ImageOctopus.sprite = OctopusStates.Sprites[0];
+                AnimatorOctopus.runtimeAnimatorController = OctopusStates.Animators[0];
             }
         }
 
-        public void Update()
+        public void FixedUpdate()
         {
             if(DPS.Value > thresholdEvolve)
             {
-                if (OctopusStateStart < OctopusStates.Sprites.Length)
+                if (OctopusStateStart < OctopusStates.Animators.Length)
                 {
-                    if (ImageOctopus != null)
+                    if (AnimatorOctopus != null)
                     {
                         ++OctopusStateStart;
-                        ImageOctopus.sprite = OctopusStates.Sprites[OctopusStateStart];
+                        AnimatorOctopus.runtimeAnimatorController = OctopusStates.Animators[OctopusStateStart];
                         if (_audio != null)
                         {
                             _audio.PlayOneShot(AudioClips.SquidEvolveSound);
