@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ScriptableFramework.Variables;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "Variables/Upgrade")]
 public class Upgrade : ScriptableObject
@@ -14,11 +15,13 @@ public class Upgrade : ScriptableObject
     public float Multiplier;
 
     public Item UpgradableItem;
+    public FloatVariable Score;
 
     public void Buy()
     {
         if(UpgradableItem != null)
         {
+            Score.Value -= Cost;
             UpgradableItem.UpdateUpgradeChain();
         }
     }

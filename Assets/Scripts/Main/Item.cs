@@ -19,6 +19,14 @@ public class Item : ScriptableObject
     private int _numberUpgradeDone;
     
     public FloatVariable DPS;
+    public FloatVariable Score;
+
+    public void Buy()
+    {
+        Score.Value -= CurrentPrice;
+        UpdatePrice();
+        UpdateDPS();
+    }
 
     /// <summary>
     /// Calculate the new price of an object, based on a Super-Duper-Mega-Cool equation
@@ -28,7 +36,6 @@ public class Item : ScriptableObject
         float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
         CurrentPrice = Mathf.Ceil(BasePrice * soldItemsFactor);
         NbItems += 1;
-        UpdateDPS();
     }
 
     public void UpdateUpgradeChain()
