@@ -13,11 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: CPU
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 800
-  CurrentPrice: 0
+  ActualPrice: 0
   BaseMultiplier: 1.15
-  StupidQuote: Tom Percheul
-  NbItems: 0
+  StupidQuote: Stupid Quote
+  NbItemsSold: 1
   UpgradeChain: []
-  DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Transistor
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 200
-  CurrentPrice: 1571
+  ActualPrice: 200
   BaseMultiplier: 1.15
-  StupidQuote: Tom Percheul
-  NbItems: 7
+  StupidQuote: Stupid Quote
+  NbItemsSold: 0
   UpgradeChain: []
-  DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
