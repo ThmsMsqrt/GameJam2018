@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00368df0feb813c468ee5eb9f020fab3, type: 3}
-  m_Name: New Audio Manager
+  m_Name: AudioManager
   m_EditorClassIdentifier: 
   BackgroundMusic: {fileID: 0}
   SquidClickSound: {fileID: 0}
