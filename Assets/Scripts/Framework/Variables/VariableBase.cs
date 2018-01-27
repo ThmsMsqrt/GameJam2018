@@ -20,7 +20,7 @@ namespace ScriptableFramework.Variables
 
         public void OnEnable()
         {
-            Debug.Log(this.Value);
+            //Debug.Log(this.Value);
         }
     }
 }

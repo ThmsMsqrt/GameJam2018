@@ -15,10 +15,12 @@ MonoBehaviour:
   Image: {fileID: 0}
   Description: DESCRIPTION OF THE ITEM
   BasePrice: 200
-  CurrentPrice: 0
+  Cost: 985
   BaseMultiplier: 1.15
   StupidQuote: Stupid Quote
-  NbItems: 0
-  UpgradeChain: []
+  NbItems: 5
+  IsUnlocked: 0
   DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
   Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
+  UpgradeChain: []
+  UnlockableItem: {fileID: 11400000, guid: 5a79905d4de9cca44a67c7428cdcece8, type: 2}

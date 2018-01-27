@@ -7,7 +7,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Variables/Item")]
 public class Item : ScriptableObject
 {
-
     private int _numberUpgradeDone;
 
     public string Name;
@@ -66,12 +65,16 @@ public class Item : ScriptableObject
         DPS.Value += (BaseMultiplier * NbItems);
     }
 
+    public void Unlock()
+    {
+        this.IsUnlocked = true; ;
+    }
+
     public void UnlockNextItem()
     {
-        if(!UnlockableItem.IsUnlocked)
+        if(UnlockableItem != null && !UnlockableItem.IsUnlocked)
         {
-            UnlockableItem.IsUnlocked = true;
-
+            UnlockableItem.Unlock();
         }
     }
 }
