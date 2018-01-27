@@ -15,8 +15,10 @@ MonoBehaviour:
   Image: {fileID: 0}
   Description: DESCRIPTION OF THE ITEM
   BasePrice: 100
-  ActualPrice: 100
+  CurrentPrice: 0
   BaseMultiplier: 1.15
   StupidQuote: Stupid Quote
-  NbItemsSold: 0
+  NbItems: 0
   UpgradeChain: []
+  DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
+  Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
