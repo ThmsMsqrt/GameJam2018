@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb77d3dfadb20a34f825b566cbf51b45, type: 3}
-  m_Name: T1 - BetterAlloys
+  m_Name: A4
   m_EditorClassIdentifier: 
   IsUnlocked: 0
-  Name: Better alloys
-  Description: Transistors are now twice more efficient
-  FluffText: Turns out gold is expensive
+  Name: Arduino Upg4
+  Description: Arduinos are now twice more efficient
+  FluffText: Stop expecting text
   Sprite: {fileID: 0}
   AlphaColor: 0
-  Cost: 1000
+  Cost: 10000000
   Multiplier: 2
   UpgradableItem: {fileID: 0}
   Score: {fileID: 0}

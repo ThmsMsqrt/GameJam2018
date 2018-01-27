@@ -17,7 +17,7 @@ MonoBehaviour:
   Image: {fileID: 0}
   NbItems: 0
   BasePrice: 15
-  Cost: 0
+  Cost: 15
   BaseMultiplier: 1.1
   IsUnlocked: 0
   DPSBase: 0.1
@@ -31,4 +31,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 384ad73b59178144c9fc6642e6cad193, type: 2}
   - {fileID: 11400000, guid: 170ae118ced7e3149aef45af530cf613, type: 2}
   - {fileID: 11400000, guid: 9c2a74c7afe8db849be73b046ae8fe5e, type: 2}
-  UnlockableItem: {fileID: 11400000, guid: 7df804eac45b0cd46adc52ec187e510a, type: 2}
