@@ -19,11 +19,11 @@ public class MouseFollower : MonoBehaviour {
         int toAdd;
         if (IsItem.Value)
         {
-            toAdd = 130;
+            toAdd = 175;
         }
         else
         {
-            toAdd = -130;
+            toAdd = -175;
         }
 
         transform.position = new Vector3(
