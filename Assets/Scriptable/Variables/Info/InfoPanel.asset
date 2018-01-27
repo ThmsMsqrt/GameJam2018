@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: InfoPanel
+  m_EditorClassIdentifier: Assembly-CSharp:ScriptableFramework.Variables:GameObjectVariable
+  DeveloperDescription: 
+  Value: {fileID: 1586804564802040, guid: 6faf65fea17f5d34c87dead01bd3af32, type: 2}
