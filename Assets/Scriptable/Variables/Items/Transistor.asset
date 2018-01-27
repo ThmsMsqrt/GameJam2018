@@ -25,5 +25,10 @@ MonoBehaviour:
   DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
   DPC: {fileID: 11400000, guid: 0700266a50d332544b7c47376fe31adf, type: 2}
   Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
-  UpgradeChain: []
+  UpgradeChain:
+  - {fileID: 11400000, guid: 7f83b645f16f851428c088e1d9925c42, type: 2}
+  - {fileID: 11400000, guid: 013d8cb0dcecf2c4d857cfbc2104a46b, type: 2}
+  - {fileID: 11400000, guid: 684bc686f6f6f764392d7d573f9bb9d2, type: 2}
+  - {fileID: 11400000, guid: 30c8f48f877288741925d034bf8b64f2, type: 2}
+  - {fileID: 11400000, guid: 93b6cdc8d3b8a2f4ca01651a806f6b20, type: 2}
   UnlockableItem: {fileID: 11400000, guid: 5a79905d4de9cca44a67c7428cdcece8, type: 2}
