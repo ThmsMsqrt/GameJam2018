@@ -1,12 +1,9 @@
 ﻿using ScriptableFramework.Variables;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreCalcul : MonoBehaviour {
 
-    float basicClickValue = 1;
-    float timing = 0f;
+    private float basicClickValue = 1;
 
     public FloatVariable Score;
     public FloatVariable DPS;
@@ -17,7 +14,8 @@ public class ScoreCalcul : MonoBehaviour {
     {
         //Init score value
         Score.SetValue(0f);
-        DPS.SetValue(0.01f);
+        DPS.SetValue(0.0f);
+        DPC.SetValue(1.0f);
     }
 	
 	// Update is called once per frame
@@ -26,10 +24,9 @@ public class ScoreCalcul : MonoBehaviour {
         Score.ApplyChange(DPS.Value);
     }
 
-    public void CalculateClickScore()
+    public void CalculateDPC()
     {
         float scoreToApply = basicClickValue;
-
         //Add factor calculation for the click
         scoreToApply *= DPC.Value;
         Score.ApplyChange(scoreToApply);

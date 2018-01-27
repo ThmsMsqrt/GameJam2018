@@ -4,8 +4,6 @@ using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour {
 
-    public Text NameOfGame;
-
     /// <summary>
     /// Method to Start the game
     /// </summary>
@@ -15,10 +13,19 @@ public class ButtonHandler : MonoBehaviour {
     }
 
     /// <summary>
+    /// Method to go back to the menu
+    /// </summary>
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+
+    /// <summary>
     /// Method to Stop the game
     /// </summary>
 	public void QuitApp()
     {
+        Debug.Log("Not working in Play Mode");
         Application.Quit();
     }
 
@@ -27,7 +34,7 @@ public class ButtonHandler : MonoBehaviour {
     /// </summary>
     public void LoadGame()
     {
-        NameOfGame.text = "WUUUUUUUUUUUUUUUUUUUUUUUUUT";
-        //TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        SceneManager.LoadScene("Credits");
     }
+
 }

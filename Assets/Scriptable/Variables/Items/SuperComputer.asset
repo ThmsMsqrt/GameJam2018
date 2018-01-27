@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79187c8a473b95f46a02b95dc5d60208, type: 3}
+  m_Name: SuperComputer
+  m_EditorClassIdentifier: 
+  Name: Super Computer
+  Description: '*Some assembly required'
+  StupidQuote: 
+  Image: {fileID: 0}
+  NbItems: 0
+  BasePrice: 1666666
+  Cost: 0
+  BaseMultiplier: 1.1
+  IsUnlocked: 0
+  DPSBase: 6666
+  DPSMultiplier: 1
+  DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
+  DPC: {fileID: 11400000, guid: 0700266a50d332544b7c47376fe31adf, type: 2}
+  Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
+  UpgradeChain: []
+  UnlockableItem: {fileID: 11400000, guid: e01a280ef5ff81d409b2a5b6a9d40ae6, type: 2}
