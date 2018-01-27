@@ -29,13 +29,10 @@ namespace Assets.Scripts.Main
         {
             if(DPS.Value > thresholdEvolve)
             {
-                Debug.Log("Hello");
                 if (OctopusStateStart < OctopusStates.Sprites.Length)
                 {
-                    Debug.Log("Hello 2");
                     if (ImageOctopus != null)
                     {
-                        Debug.Log("Hello 3");
                         ++OctopusStateStart;
                         ImageOctopus.sprite = OctopusStates.Sprites[OctopusStateStart];
                         if (_audio != null)

@@ -21,6 +21,7 @@ MonoBehaviour:
   NbItems: 2
   IsUnlocked: 0
   DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
+  DPC: {fileID: 11400000, guid: 0700266a50d332544b7c47376fe31adf, type: 2}
   Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
   UpgradeChain: []
   UnlockableItem: {fileID: 11400000, guid: e01a280ef5ff81d409b2a5b6a9d40ae6, type: 2}

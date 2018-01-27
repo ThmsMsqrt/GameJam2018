@@ -3,13 +3,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour {
-    
+
     /// <summary>
     /// Method to Start the game
     /// </summary>
     public void StartApp()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    /// <summary>
+    /// Method to go back to the menu
+    /// </summary>
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 
     /// <summary>
@@ -26,8 +34,7 @@ public class ButtonHandler : MonoBehaviour {
     /// </summary>
     public void LoadGame()
     {
-        Debug.Log("Nothing in the credits yet");
-        //TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        SceneManager.LoadScene("Credits");
     }
 
 }
