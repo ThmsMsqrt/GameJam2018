@@ -10,6 +10,7 @@ public class InputKeyboard : MonoBehaviour {
     public GameEvent On1Clicked;
     public GameEvent On2Clicked;
     public GameEvent On3Clicked;
+    public GameEvent OnEnterClicked;
 
     bool UpIsClicked;
 
@@ -35,6 +36,10 @@ public class InputKeyboard : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             On3Clicked.Raise();
+        }
+        else if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown("enter"))
+        {
+            OnEnterClicked.Raise();
         }
 
     }
