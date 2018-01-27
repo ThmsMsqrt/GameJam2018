@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class GreenRectangleHandler : MonoBehaviour {
 
     public Text StartText, CreditsText, QuitText;
-
-    //6.172.29
-
+    public Sprite FirstBackground, SecondBackground, ThirdBackground;
+    public GameObject BackgroundPanel;
+        
     Color32 green;
     Color32 black;
     RectTransform rect;
@@ -31,6 +31,7 @@ public class GreenRectangleHandler : MonoBehaviour {
             rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + 40.5f);
             indexCurrentButton--;
             ChangeColorText();
+            ChangeBackground();
         }
     }
 
@@ -44,6 +45,7 @@ public class GreenRectangleHandler : MonoBehaviour {
             rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 40.5f);
             indexCurrentButton++;
             ChangeColorText();
+            ChangeBackground();
         }
     }
 
@@ -68,4 +70,23 @@ public class GreenRectangleHandler : MonoBehaviour {
                 break;
         }
     }
-}
+    
+    void ChangeBackground()
+    {
+        switch (indexCurrentButton)
+        {
+            case (0):
+                BackgroundPanel.GetComponent<Image>().sprite = FirstBackground;
+                break;
+            case (1):
+                BackgroundPanel.GetComponent<Image>().sprite = SecondBackground;
+                break;
+            case (2):
+                BackgroundPanel.GetComponent<Image>().sprite = ThirdBackground;
+                break;
+            default:
+                Debug.LogError("Error with INDEX CURRENT BUTTON / " + indexCurrentButton);
+                break;
+        }
+    }
+} 
