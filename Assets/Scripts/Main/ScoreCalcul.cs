@@ -1,12 +1,9 @@
 ﻿using ScriptableFramework.Variables;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreCalcul : MonoBehaviour {
 
-    float basicClickValue = 1;
-    float timing = 0f;
+    private float basicClickValue = 1;
 
     public FloatVariable Score;
     public FloatVariable DPS;
@@ -37,6 +34,6 @@ public class ScoreCalcul : MonoBehaviour {
 
     public void CalculateDPC()
     {
-
+        Score.ApplyChange(basicClickValue);
     }
 }

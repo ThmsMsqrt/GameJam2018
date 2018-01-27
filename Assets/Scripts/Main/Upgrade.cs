@@ -12,4 +12,6 @@ public class Upgrade : ScriptableObject
     public float AlphaColor;
     public float Cost;
     public float Multiplier;
+
+    public Item UpgradableItem;
 }
