@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Transistor
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 200
   ActualPrice: 200
-  StupidQuote: Tom Percheul
+  BaseMultiplier: 1.15
+  StupidQuote: Stupid Quote
   NbItemsSold: 0
+  UpgradeChain: []

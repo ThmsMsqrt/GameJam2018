@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Server Rack
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 2500
   ActualPrice: 2500
-  StupidQuote: 
+  BaseMultiplier: 1.15
+  StupidQuote: Stupid Quote
   NbItemsSold: 0
+  UpgradeChain: []

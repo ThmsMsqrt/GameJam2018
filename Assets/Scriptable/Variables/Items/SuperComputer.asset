@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Super Computer
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 4000
   ActualPrice: 4000
-  StupidQuote: 
+  BaseMultiplier: 1.15
+  StupidQuote: Stupid Quote
   NbItemsSold: 0
+  UpgradeChain: []

@@ -12,20 +12,13 @@ public class ScoreDisplayer : MonoBehaviour {
 
     [Header("Data Per Second Object")]
     public Text DPSText;
-    public FloatReference DPS;
+    public FloatReference DPS;    
 
-    private string DataScale = "o";
-
-    // Use this for initialization
-    void Start ()
+    // Update is called once per frame
+    void FixedUpdate ()
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        ScoreText.text = "Data : " + (int)Score.Value + DataScale;
-        DPSText.text = "Data per second : " + DPS.Value + DataScale;
+        ScoreText.text = "Data : " + LargeNumber.ToString((double)Score.Value) + "o";
+        DPSText.text = "DPS : " + LargeNumber.ToString((double)DPS.Value) + "o";
     }
+    
 }

@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Arduino
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 400
   ActualPrice: 400
-  StupidQuote: Tom Percheul
+  BaseMultiplier: 1.15
+  StupidQuote: Stupid Quote
   NbItemsSold: 0
+  UpgradeChain: []

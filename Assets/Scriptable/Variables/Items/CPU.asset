@@ -13,8 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: CPU
   Image: {fileID: 0}
-  Description: 
+  Description: DESCRIPTION OF THE ITEM
   BasePrice: 800
-  ActualPrice: 800
-  StupidQuote: Tom Percheul
-  NbItemsSold: 0
+  ActualPrice: 0
+  BaseMultiplier: 1.15
+  StupidQuote: Stupid Quote
+  NbItemsSold: 1
+  UpgradeChain: []
