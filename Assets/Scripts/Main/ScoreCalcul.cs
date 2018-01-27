@@ -14,7 +14,7 @@ public class ScoreCalcul : MonoBehaviour {
     {
         //Init score value
         Score.SetValue(0f);
-        DPS.SetValue(0.01f);
+        DPS.SetValue(0.0f);
         DPC.SetValue(1.0f);
     }
 	
