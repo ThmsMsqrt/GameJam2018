@@ -17,7 +17,7 @@ MonoBehaviour:
   Image: {fileID: 0}
   NbItems: 0
   BasePrice: 500
-  Cost: 0
+  Cost: 500
   BaseMultiplier: 1.1
   IsUnlocked: 0
   DPSBase: 500
@@ -25,5 +25,9 @@ MonoBehaviour:
   DPS: {fileID: 11400000, guid: ff6a48e1a0422f34ea21a8dd03c4bf5d, type: 2}
   DPC: {fileID: 11400000, guid: 0700266a50d332544b7c47376fe31adf, type: 2}
   Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
-  UpgradeChain: []
-  UnlockableItem: {fileID: 11400000, guid: 64a6f15ff638bbc418f57f6f1cc53fa5, type: 2}
+  UpgradeChain:
+  - {fileID: 11400000, guid: 9665e278b51ee154795f08797b79a54f, type: 2}
+  - {fileID: 11400000, guid: a6123c7c997b03743a6d57202ce3ec7f, type: 2}
+  - {fileID: 11400000, guid: 553ad1e461ece64439e5034401cee0c8, type: 2}
+  - {fileID: 11400000, guid: 7b9ced8b1578de74baf87b3370724e05, type: 2}
+  - {fileID: 11400000, guid: 73731bc0d5f68f840892c627edd26a15, type: 2}

@@ -17,7 +17,7 @@ MonoBehaviour:
   Image: {fileID: 0}
   NbItems: 0
   BasePrice: 123456790
-  Cost: 0
+  Cost: 123456790
   BaseMultiplier: 1.1
   IsUnlocked: 0
   DPSBase: 987654
@@ -26,4 +26,3 @@ MonoBehaviour:
   DPC: {fileID: 11400000, guid: 0700266a50d332544b7c47376fe31adf, type: 2}
   Score: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
   UpgradeChain: []
-  UnlockableItem: {fileID: 11400000, guid: f246c5adf25f59b4991742a29505fa49, type: 2}
