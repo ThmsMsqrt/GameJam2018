@@ -15,6 +15,6 @@ MonoBehaviour:
   Image: {fileID: 0}
   Description: 
   BasePrice: 100000000
-  PriceIncrease: 30
+  ActualPrice: 100000000
   StupidQuote: 
   NbItemsSold: 0
