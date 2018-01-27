@@ -9,16 +9,21 @@ public class Item : ScriptableObject
 {
     private int _numberUpgradeDone;
 
-    public string Name;
-    public Sprite Image;
-    public string Description;
-    public float BasePrice = 0;
-    public float Cost;
-    public float BaseMultiplier = 1.15f;
-    public string StupidQuote;
-    public int NbItems;
-    public bool IsUnlocked;
+	public string Name; //Object Name
+    public string Description; // Correct description
+	public string StupidQuote;
+
+	public Sprite Image;
     
+	public int NbItems;
+	public float BasePrice = 0; //Price of the 1st one
+    public float Cost; // Current price for one more
+    public float BaseMultiplier = 1.15f; // 
+    
+	public bool IsUnlocked;
+    
+	public float DPSBase = 0;
+	public float DPSMultiplier = 0;
     public FloatVariable DPS;
     public FloatVariable DPC;
     public FloatVariable Score;
@@ -81,7 +86,7 @@ public class Item : ScriptableObject
 
     public void UnlockNextItem()
     {
-        if(UnlockableItem != null && !UnlockableItem.IsUnlocked)
+		if(!UnlockableItem.IsUnlocked && UnlockableItem != null) 
         {
             UnlockableItem.Unlock();
         }

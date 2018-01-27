@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundMusic: {fileID: 0}
   SquidClickSound: {fileID: 0}
-  SquidEvolveSound: {fileID: 0}
+  SquidEvolveSound: {fileID: 8300000, guid: 67a2a3d9506141a48ab481bb3902bf76, type: 3}
   UpgradeClickSound: {fileID: 0}
   ItemClickSound: {fileID: 0}

@@ -25,7 +25,7 @@ namespace Assets.Scripts.Main
             }
         }
 
-        public void Update()
+        public void FixedUpdate()
         {
             if(DPS.Value > thresholdEvolve)
             {
