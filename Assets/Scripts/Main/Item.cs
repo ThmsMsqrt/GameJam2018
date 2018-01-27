@@ -30,6 +30,7 @@ public class Item : ScriptableObject
 
     public Upgrade[] UpgradeChain;
     public Item UnlockableItem;
+    public GameEvent UnlockItemEvent;
 
     //TODO add IsUnlocked
     public void Buy()
@@ -53,6 +54,7 @@ public class Item : ScriptableObject
         NbItems += 1;
         if(NbItems == 1)
         {
+            Debug.Log("items : " + NbItems + " " + UnlockableItem);
             UnlockNextItem();
         }
     }
@@ -82,11 +84,12 @@ public class Item : ScriptableObject
     public void Unlock()
     {
         this.IsUnlocked = true;
+        UnlockItemEvent.Raise();
     }
 
     public void UnlockNextItem()
     {
-		if(!UnlockableItem.IsUnlocked && UnlockableItem != null) 
+		if(UnlockableItem != null && !UnlockableItem.IsUnlocked) 
         {
             UnlockableItem.Unlock();
         }

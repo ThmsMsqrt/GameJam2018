@@ -11,9 +11,12 @@ public class ItemBehaviour : MonoBehaviour
         
     private void Start()
     {
-        if(!AttachedItem.IsUnlocked)
+        if(!(AttachedItem.NbItems > 1))
         {
             gameObject.SetActive(false);
+        }
+        if(!AttachedItem.IsUnlocked)
+        {
         }
         _buyButton = GetComponent<Button>();
     }
