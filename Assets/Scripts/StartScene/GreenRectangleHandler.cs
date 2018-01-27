@@ -8,6 +8,7 @@ public class GreenRectangleHandler : MonoBehaviour {
     public Text StartText, CreditsText, QuitText;
     public Sprite FirstBackground, SecondBackground, ThirdBackground;
     public GameObject BackgroundPanel;
+    public ButtonHandler ButtonHandlerScript;
         
     Color32 green;
     Color32 black;
@@ -46,6 +47,28 @@ public class GreenRectangleHandler : MonoBehaviour {
             indexCurrentButton++;
             ChangeColorText();
             ChangeBackground();
+        }
+    }
+
+    /// <summary>
+    /// Method to handle the enter key
+    /// </summary>
+    public void EnterClicked()
+    {
+        switch (indexCurrentButton)
+        {
+            case (0):
+                ButtonHandlerScript.StartApp();
+                break;
+            case (1):
+                ButtonHandlerScript.LoadGame();
+                break;
+            case (2):
+                ButtonHandlerScript.QuitApp();
+                break;
+            default:
+                Debug.LogError("Error with INDEX CURRENT BUTTON / " + indexCurrentButton);
+                break;
         }
     }
 

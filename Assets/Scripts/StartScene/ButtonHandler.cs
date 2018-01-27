@@ -3,9 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour {
-
-    public Text NameOfGame;
-
+    
     /// <summary>
     /// Method to Start the game
     /// </summary>
@@ -19,6 +17,7 @@ public class ButtonHandler : MonoBehaviour {
     /// </summary>
 	public void QuitApp()
     {
+        Debug.Log("Not working in Play Mode");
         Application.Quit();
     }
 
@@ -27,7 +26,8 @@ public class ButtonHandler : MonoBehaviour {
     /// </summary>
     public void LoadGame()
     {
-        NameOfGame.text = "WUUUUUUUUUUUUUUUUUUUUUUUUUT";
+        Debug.Log("Nothing in the credits yet");
         //TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
+
 }
