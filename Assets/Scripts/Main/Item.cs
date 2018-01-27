@@ -20,6 +20,7 @@ public class Item : ScriptableObject
     public bool IsUnlocked;
     
     public FloatVariable DPS;
+    public FloatVariable DPC;
     public FloatVariable Score;
 
     public Upgrade[] UpgradeChain;
@@ -33,6 +34,7 @@ public class Item : ScriptableObject
             Score.Value -= Cost;
             UpdatePrice();
             UpdateDPS();
+            UpdateDPC();
         }
     }
 
@@ -56,18 +58,25 @@ public class Item : ScriptableObject
         {
             BaseMultiplier *= UpgradeChain[_numberUpgradeDone].Multiplier;
             UpdateDPS();
+            UpdateDPC();
             ++_numberUpgradeDone;
+            Debug.Log("UpdateUpgradeChain");
         }
     }
     
     private void UpdateDPS()
     {
-        DPS.Value += (BaseMultiplier * NbItems);
+        DPS.ApplyChange(BaseMultiplier * NbItems);
+    }
+
+    private void UpdateDPC()
+    {
+        DPC.ApplyChange(DPC.Value * NbItems);
     }
 
     public void Unlock()
     {
-        this.IsUnlocked = true; ;
+        this.IsUnlocked = true;
     }
 
     public void UnlockNextItem()

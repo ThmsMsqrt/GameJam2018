@@ -15,6 +15,7 @@ public class ScoreCalcul : MonoBehaviour {
         //Init score value
         Score.SetValue(0f);
         DPS.SetValue(0.01f);
+        DPC.SetValue(1.0f);
     }
 	
 	// Update is called once per frame
@@ -23,16 +24,11 @@ public class ScoreCalcul : MonoBehaviour {
         Score.ApplyChange(DPS.Value);
     }
 
-    public void CalculateDPS()
+    public void CalculateDPC()
     {
         float scoreToApply = basicClickValue;
         //Add factor calculation for the click
         scoreToApply *= DPC.Value;
         Score.ApplyChange(scoreToApply);
-    }
-
-    public void CalculateDPC()
-    {
-        Score.ApplyChange(basicClickValue);
     }
 }
