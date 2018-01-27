@@ -6,15 +6,11 @@ public class ItemBehaviour : MonoBehaviour
 {
     public Item AttachedItem;
     public FloatReference Score;
-
+    public FloatReference UnlockableItemPercentage;
     private Button _buyButton;
         
     private void Start()
     {
-        if(!AttachedItem.IsUnlocked)
-        {
-            gameObject.SetActive(false);
-        }
         _buyButton = GetComponent<Button>();
     }
 
