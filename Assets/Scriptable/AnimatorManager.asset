@@ -9,9 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 333017364c44b6d409c706985bbb6a11, type: 3}
-  m_Name: OctopusSprites
+  m_Name: AnimatorManager
   m_EditorClassIdentifier: 
-  Sprites:
-  - {fileID: 21300000, guid: 31d6633273129794787d98fa4e556a7d, type: 3}
-  - {fileID: 21300000, guid: 89561ddde7b31024e83e658d30805de6, type: 3}
-  - {fileID: 21300000, guid: 3ba05b3cd18eb4a42bb077ed8a0fbf60, type: 3}
+  Animators:
+  - {fileID: 9100000, guid: 374f5130a37f9514481d50430c6ca418, type: 2}
