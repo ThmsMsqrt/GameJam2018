@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemBehaviour : MonoBehaviour
+public class UpgradeBehaviour : MonoBehaviour
 {
-    public Item AttachedItem;
+    public Upgrade AttachedItem;
 
     private Button _buyButton;
-        
+
     private void Start()
     {
         _buyButton = GetComponent<Button>();
     }
-        
+
     public void CanBuy()
     {
         if (AttachedItem.Score.Value >= AttachedItem.Cost)

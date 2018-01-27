@@ -7,40 +7,33 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Variables/Item")]
 public class Item : ScriptableObject
 {
+
+    private int _numberUpgradeDone;
+
     public string Name;
     public Sprite Image;
     public string Description;
     public float BasePrice = 0;
-    public float CurrentPrice;
+    public float Cost;
     public float BaseMultiplier = 1.15f;
     public string StupidQuote;
     public int NbItems;
-
-    public Upgrade[] UpgradeChain;
-    private int _numberUpgradeDone;
+    public bool IsUnlocked;
     
     public FloatVariable DPS;
     public FloatVariable Score;
 
-    public GameEvent CanBuyEvent;
-
+    public Upgrade[] UpgradeChain;
     public Item UnlockableItem;
 
+    //TODO add IsUnlocked
     public void Buy()
     {
-        if(Score.Value >= CurrentPrice)
+        if(Score.Value >= Cost)
         {
-            Score.Value -= CurrentPrice;
+            Score.Value -= Cost;
             UpdatePrice();
             UpdateDPS();
-        }
-    }
-
-    public void CanBuy()
-    {
-        if (Score.Value >= CurrentPrice)
-        {
-            CanBuyEvent.Raise();
         }
     }
 
@@ -50,8 +43,12 @@ public class Item : ScriptableObject
     public void UpdatePrice()
     {
         float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
-        CurrentPrice = Mathf.Ceil(BasePrice * soldItemsFactor);
+        Cost = Mathf.Ceil(BasePrice * soldItemsFactor);
         NbItems += 1;
+        if(NbItems == 1)
+        {
+            UnlockNextItem();
+        }
     }
 
     public void UpdateUpgradeChain()
@@ -63,9 +60,18 @@ public class Item : ScriptableObject
             ++_numberUpgradeDone;
         }
     }
-
-    public void UpdateDPS()
+    
+    private void UpdateDPS()
     {
-        DPS.Value *= (BaseMultiplier * NbItems);
+        DPS.Value += (BaseMultiplier * NbItems);
+    }
+
+    public void UnlockNextItem()
+    {
+        if(!UnlockableItem.IsUnlocked)
+        {
+            UnlockableItem.IsUnlocked = true;
+
+        }
     }
 }
