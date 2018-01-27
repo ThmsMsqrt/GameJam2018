@@ -33,8 +33,8 @@ namespace Assets.Scripts.Main
                 {
                     if (AnimatorOctopus != null)
                     {
-                        ++OctopusStateStart;
                         AnimatorOctopus.runtimeAnimatorController = OctopusStates.Animators[OctopusStateStart];
+                        ++OctopusStateStart;
                         if (_audio != null)
                         {
                             _audio.PlayOneShot(AudioClips.SquidEvolveSound);
