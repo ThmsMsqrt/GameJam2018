@@ -8,12 +8,15 @@ namespace Assets.Scripts.Main
     {
         public SpriteManager OctopusStates;
         public FloatReference Score;
+        public AudioManager AudioClips;
+        private AudioSource _audio;
 
         private Image ImageOctopus;
         private int OctopusStateStart = 0;
 
         public void Start()
         {
+            _audio = GetComponent<AudioSource>();
             ImageOctopus = GetComponent<Image>();
             if (ImageOctopus != null)
             {
@@ -31,6 +34,10 @@ namespace Assets.Scripts.Main
                     {
                         ImageOctopus.sprite = OctopusStates.Sprites[OctopusStateStart];
                         ++OctopusStateStart;
+                        if (_audio != null)
+                        {
+                            _audio.PlayOneShot(AudioClips.SquidEvolveSound);
+                        }
                     }
                 }
             }
