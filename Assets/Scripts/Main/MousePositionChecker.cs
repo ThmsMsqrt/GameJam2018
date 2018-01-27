@@ -50,7 +50,7 @@ public class MousePositionChecker : MonoBehaviour
                     text.text = item.StupidQuote;
                     break;
                 case ("ActualPriceText"):
-                    text.text = "Price : " + item.ActualPrice.ToString();
+                    text.text = "Price : " + item.CurrentPrice.ToString();
                     break;
                 default:
                     Debug.LogError("There's been a problem : " + text.gameObject.name);

@@ -14,4 +14,12 @@ public class Upgrade : ScriptableObject
     public float Multiplier;
 
     public Item UpgradableItem;
+
+    public void Buy()
+    {
+        if(UpgradableItem != null)
+        {
+            UpgradableItem.UpdateUpgradeChain();
+        }
+    }
 }
