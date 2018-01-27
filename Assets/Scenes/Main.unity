@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aecb07e1b08204249b42b912d25cf5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OctopusStates: {fileID: 11400000, guid: e3e7ddc7d9cdf034080388266c5ccbfc, type: 2}
+  OctopusStates: {fileID: 11400000, guid: e3a3b737f8dd5a14a8948035daf18ad4, type: 2}
   DPS:
     UseConstant: 0
     ConstantValue: 0
@@ -6036,27 +6036,27 @@ Prefab:
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 62
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 174
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -800
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -550
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
@@ -6071,7 +6071,7 @@ Prefab:
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224354517110776010, guid: 6faf65fea17f5d34c87dead01bd3af32,
         type: 2}
@@ -6150,6 +6150,11 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 0e9d7e65389a0f44b8e83a5150b0fba9,
         type: 3}
+    - target: {fileID: 114061909407340752, guid: 6faf65fea17f5d34c87dead01bd3af32,
+        type: 2}
+      propertyPath: m_Text
+      value: '  PRICE TO PAY : '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6faf65fea17f5d34c87dead01bd3af32, type: 2}
   m_IsPrefabParent: 0
