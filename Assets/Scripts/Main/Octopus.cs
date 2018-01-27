@@ -24,7 +24,7 @@ namespace Assets.Scripts.Main
             }
         }
 
-        public void Update()
+        public void FixedUpdate()
         {
             if(Score.Value > 10)
             {

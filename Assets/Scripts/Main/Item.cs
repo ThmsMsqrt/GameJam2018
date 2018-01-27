@@ -13,6 +13,7 @@ public class Item : ScriptableObject
     public Sprite Image;
     public string Description;
     public float BasePrice = 0;
+    public float BaseProduction;
     public float Cost;
     public float BaseMultiplier = 1.15f;
     public string StupidQuote;
