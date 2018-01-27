@@ -2471,6 +2471,7 @@ GameObject:
   - component: {fileID: 983341912}
   - component: {fileID: 983341911}
   - component: {fileID: 983341913}
+  - component: {fileID: 983341914}
   m_Layer: 5
   m_Name: Octopus
   m_TagString: Untagged
@@ -2516,7 +2517,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3ba05b3cd18eb4a42bb077ed8a0fbf60, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31d6633273129794787d98fa4e556a7d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2582,6 +2583,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &983341914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983341909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecb07e1b08204249b42b912d25cf5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OctopusStates: {fileID: 11400000, guid: e3e7ddc7d9cdf034080388266c5ccbfc, type: 2}
+  Score:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 5e5cd614d919c6e49a849a8b2e793cd3, type: 2}
 --- !u!1 &1086301620
 GameObject:
   m_ObjectHideFlags: 0
