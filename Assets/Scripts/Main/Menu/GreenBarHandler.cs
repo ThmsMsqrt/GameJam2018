@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GreenRectangleHandler : MonoBehaviour {
+public class GreenBarHandler : MonoBehaviour
+{
 
-    public Text StartText, CreditsText, QuitText;
-    public Sprite FirstBackground, SecondBackground, ThirdBackground;
-    public GameObject BackgroundPanel;
+    public Text ResumeText, BackToMenuText, QuitText;
+    public GameObject MenuPanel;
     public ButtonHandler ButtonHandlerScript;
-        
+
     Color32 green;
     Color32 black;
     RectTransform rect;
@@ -19,20 +19,19 @@ public class GreenRectangleHandler : MonoBehaviour {
     {
         green = new Color32(0, 255, 0, 255);
         black = Color.black;
-        rect = GetComponent<RectTransform>();   
+        rect = GetComponent<RectTransform>();
     }
 
     public void OnGoingUp()
     {
         // offsetmin = new Vector2(left, bottom); 
         // offsetmax = new Vector2(-right, -top);
-        if (rect.offsetMin.y < 40.5f)
+        if (rect.offsetMin.y < 76.8f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + 40.5f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + 40.5f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + 76.8f);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + 76.8f);
             indexCurrentButton--;
             ChangeColorText();
-            ChangeBackground();
         }
     }
 
@@ -40,13 +39,12 @@ public class GreenRectangleHandler : MonoBehaviour {
     {
         // offsetmin = new Vector2(left, bottom); 
         // offsetmax = new Vector2(-right, -top);
-        if (rect.offsetMin.y > - 40.5f)
+        if (rect.offsetMin.y > -76.8f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - 40.5f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 40.5f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - 76.8f);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 76.8f);
             indexCurrentButton++;
             ChangeColorText();
-            ChangeBackground();
         }
     }
 
@@ -58,10 +56,10 @@ public class GreenRectangleHandler : MonoBehaviour {
         switch (indexCurrentButton)
         {
             case (0):
-                ButtonHandlerScript.StartApp();
+                MenuPanel.SetActive(false);
                 break;
             case (1):
-                ButtonHandlerScript.LoadGame();
+                ButtonHandlerScript.BackToMenu();
                 break;
             case (2):
                 ButtonHandlerScript.QuitApp();
@@ -74,16 +72,16 @@ public class GreenRectangleHandler : MonoBehaviour {
 
     void ChangeColorText()
     {
-        StartText.color = green;
-        CreditsText.color = green;
+        ResumeText.color = green;
+        BackToMenuText.color = green;
         QuitText.color = green;
         switch (indexCurrentButton)
         {
             case (0):
-                StartText.color = black;
+                ResumeText.color = black;
                 break;
             case (1):
-                CreditsText.color = black;
+                BackToMenuText.color = black;
                 break;
             case (2):
                 QuitText.color = black;
@@ -93,23 +91,4 @@ public class GreenRectangleHandler : MonoBehaviour {
                 break;
         }
     }
-    
-    void ChangeBackground()
-    {
-        switch (indexCurrentButton)
-        {
-            case (0):
-                BackgroundPanel.GetComponent<Image>().sprite = FirstBackground;
-                break;
-            case (1):
-                BackgroundPanel.GetComponent<Image>().sprite = SecondBackground;
-                break;
-            case (2):
-                BackgroundPanel.GetComponent<Image>().sprite = ThirdBackground;
-                break;
-            default:
-                Debug.LogError("Error with INDEX CURRENT BUTTON / " + indexCurrentButton);
-                break;
-        }
-    }
-} 
+}
