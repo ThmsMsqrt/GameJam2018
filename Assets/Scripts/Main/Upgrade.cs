@@ -1,4 +1,5 @@
-﻿using ScriptableFramework.Variables;
+﻿using ScriptableFramework.Events;
+using ScriptableFramework.Variables;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Variables/Upgrade")]
@@ -16,6 +17,7 @@ public class Upgrade : ScriptableObject
 
     public Item UpgradableItem;
     public FloatVariable Score;
+    public GameEvent CanBuyEvent;
 
     public void Buy()
     {
@@ -23,6 +25,14 @@ public class Upgrade : ScriptableObject
         {
             Score.Value -= Cost;
             UpgradableItem.UpdateUpgradeChain();
+        }
+    }
+
+    public void CanBuy()
+    {
+        if (Score.Value >= Cost)
+        {
+            CanBuyEvent.Raise();
         }
     }
 }
