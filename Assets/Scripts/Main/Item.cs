@@ -10,22 +10,25 @@ public class Item : ScriptableObject
     public Sprite Image;
     public string Description;
     public float BasePrice = 0;
-    public float ActualPrice;
+    public float CurrentPrice;
     public float BaseMultiplier = 1.15f;
     public string StupidQuote;
-    public int NbItemsSold;
+    public int NbItems;
 
     public Upgrade[] UpgradeChain;
     private int _numberUpgradeDone;
+    
+    public FloatVariable DPS;
 
     /// <summary>
     /// Calculate the new price of an object, based on a Super-Duper-Mega-Cool equation
     /// </summary>
-    public void NewPrice()
+    public void UpdatePrice()
     {
-        float soldItemsFactor = Mathf.Pow(NbItemsSold, BaseMultiplier);
-        ActualPrice = Mathf.Ceil(BasePrice * soldItemsFactor);
-        NbItemsSold += 1;
+        float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
+        CurrentPrice = Mathf.Ceil(BasePrice * soldItemsFactor);
+        NbItems += 1;
+        UpdateDPS();
     }
 
     public void UpdateUpgradeChain()
@@ -33,7 +36,13 @@ public class Item : ScriptableObject
         if(!(_numberUpgradeDone > UpgradeChain.Length))
         {
             BaseMultiplier *= UpgradeChain[_numberUpgradeDone].Multiplier;
+            UpdateDPS();
             ++_numberUpgradeDone;
         }
+    }
+
+    public void UpdateDPS()
+    {
+        DPS.Value *= (BaseMultiplier * NbItems);
     }
 }
