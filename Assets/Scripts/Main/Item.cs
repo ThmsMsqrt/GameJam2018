@@ -1,4 +1,5 @@
-﻿using ScriptableFramework.Variables;
+﻿using ScriptableFramework.Events;
+using ScriptableFramework.Variables;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,11 +22,26 @@ public class Item : ScriptableObject
     public FloatVariable DPS;
     public FloatVariable Score;
 
+    public GameEvent CanBuyEvent;
+
+    public Item UnlockableItem;
+
     public void Buy()
     {
-        Score.Value -= CurrentPrice;
-        UpdatePrice();
-        UpdateDPS();
+        if(Score.Value >= CurrentPrice)
+        {
+            Score.Value -= CurrentPrice;
+            UpdatePrice();
+            UpdateDPS();
+        }
+    }
+
+    public void CanBuy()
+    {
+        if (Score.Value >= CurrentPrice)
+        {
+            CanBuyEvent.Raise();
+        }
     }
 
     /// <summary>
