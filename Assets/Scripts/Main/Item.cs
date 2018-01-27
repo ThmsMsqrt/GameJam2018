@@ -29,8 +29,6 @@ public class Item : ScriptableObject
     public FloatVariable Score;
 
     public Upgrade[] UpgradeChain;
-    public Item UnlockableItem;
-    public GameEvent UnlockItemEvent;
 
     //TODO add IsUnlocked
     public void Buy()
@@ -52,11 +50,6 @@ public class Item : ScriptableObject
         float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
         Cost = Mathf.Ceil(BasePrice * soldItemsFactor);
         NbItems += 1;
-        if(NbItems == 1)
-        {
-            Debug.Log("items : " + NbItems + " " + UnlockableItem);
-            UnlockNextItem();
-        }
     }
 
     public void UpdateUpgradeChain()
@@ -79,19 +72,5 @@ public class Item : ScriptableObject
     private void UpdateDPC()
     {
         DPC.ApplyChange(DPC.Value * NbItems);
-    }
-
-    public void Unlock()
-    {
-        this.IsUnlocked = true;
-        UnlockItemEvent.Raise();
-    }
-
-    public void UnlockNextItem()
-    {
-		if(UnlockableItem != null && !UnlockableItem.IsUnlocked) 
-        {
-            UnlockableItem.Unlock();
-        }
     }
 }
