@@ -19,6 +19,7 @@ MonoBehaviour:
   AlphaColor: 0
   Cost: 1000
   Multiplier: 2
-  UpgradableItem: {fileID: 0}
+  UpgradableItem: {fileID: 11400000, guid: a0d49aefa130eb740b994fc1171160af, type: 2}
   Score: {fileID: 0}
+  DPC: {fileID: 0}
   CanBuyEvent: {fileID: 0}
