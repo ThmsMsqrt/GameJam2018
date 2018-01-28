@@ -14,7 +14,7 @@ MonoBehaviour:
   Name: Arduino
   Description: A computer on the chip
   StupidQuote: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 9b7a9d06d2849214f9e139307e4baaa7, type: 3}
   NbItems: 0
   BasePrice: 500
   Cost: 500

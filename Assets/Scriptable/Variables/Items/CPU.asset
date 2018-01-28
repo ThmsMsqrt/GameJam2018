@@ -14,7 +14,7 @@ MonoBehaviour:
   Name: Octopodes brains
   Description: Canis canem edit
   StupidQuote: 
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 6f25e18003776a0479c1125088e5f828, type: 3}
   NbItems: 0
   BasePrice: 10000
   Cost: 10000
