@@ -283,7 +283,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 497007493}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 3c6c468c71ac5094c8c4a8c468826f7c, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 34f6783242398cf4aaa2f909800b7d01, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 16246917}
@@ -296,12 +296,14 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: file://C:/Users/Thomas/Documents/Works/GameJam/GameJam2018/Assets/StreamingAssets/proto_Octo.exe.mp4
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
