@@ -11,7 +11,7 @@ public class UpgradeBehaviour : MonoBehaviour
 
     private void Start()
     {
-        _buyButton = GetComponent<Button>();
+		_buyButton = GetComponent<Button>();
     }
 
     void FixedUpdate()

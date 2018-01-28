@@ -21,7 +21,7 @@ public class ScoreCalcul : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        Score.ApplyChange(DPS.Value);
+		Score.ApplyChange(DPS.Value * Time.deltaTime);
     }
 
     public void CalculateDPC()

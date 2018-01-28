@@ -11,6 +11,9 @@ public class ItemBehaviour : MonoBehaviour
         
     private void Start()
     {
+		AttachedItem.Cost = AttachedItem.BasePrice;
+		AttachedItem.NbItems = 0;
+
         _buyButton = GetComponent<Button>();
     }
 
