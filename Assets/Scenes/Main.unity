@@ -291,6 +291,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 95286719187259786, guid: 1940253f74e50a140a322116785a427f,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 430ec842a31234549b5c110a753182fc, type: 2}
     - target: {fileID: 224651976877128372, guid: 1940253f74e50a140a322116785a427f,
         type: 2}
       propertyPath: m_AnchorMin.y
@@ -414,7 +419,7 @@ Prefab:
     - target: {fileID: 224719108703323082, guid: 1940253f74e50a140a322116785a427f,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -71.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224849347160953944, guid: 1940253f74e50a140a322116785a427f,
         type: 2}
@@ -820,7 +825,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 2a49fc39260702b4fbbdb0717fc7b33f, type: 3}
+      objectReference: {fileID: 8300000, guid: e2746e3538b726e48a24170af93a2bc2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d7c6b1ea9162d84e8ccb2b9ac0f59d0, type: 2}
   m_IsPrefabParent: 0
