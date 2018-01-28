@@ -17,15 +17,19 @@ public class Upgrade : ScriptableObject
 
     public Item UpgradableItem;
     public FloatVariable Score;
+	public FloatVariable DPC;
     public GameEvent CanBuyEvent;
 
     public void Buy()
     {
-        if(UpgradableItem != null)
-        {
-            Score.Value -= Cost;
-            UpgradableItem.UpdateUpgradeChain();
-        }
+		Score.Value -= Cost;
+		if (UpgradableItem != null) {
+			//Case where we *2 the DPS of an Item
+			UpgradableItem.UpdateUpgradeChain ();
+		} else {
+			//case where we DPC * 2
+			DPC.Value *= 2;
+		}
     }
 
     public void CanBuy()
