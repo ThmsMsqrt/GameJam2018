@@ -15,8 +15,8 @@ public class ScoreDisplayer : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate ()
     {
-        ScoreText.text = "Data  " + LargeNumber.ToString(Score.Value);
-        DPSText.text = "DPS  " + LargeNumber.ToString(DPS.Value);
+        ScoreText.text = ("Data  " + LargeNumber.ToString(Score.Value)).ToUpper();
+        DPSText.text = ("DPS  " + LargeNumber.ToString(DPS.Value)).ToUpper();
     }
     
 }
