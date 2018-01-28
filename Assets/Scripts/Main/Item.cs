@@ -53,14 +53,15 @@ public class Item : ScriptableObject
     public void UpdatePrice()
     {
         float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
-        Cost = Mathf.Ceil(BasePrice * soldItemsFactor);
+		Cost = Mathf.Ceil(BasePrice * (soldItemsFactor+1));
     }
 
     public void UpdateUpgradeChain()
     {
         if(!(_numberUpgradeDone > UpgradeChain.Length))
         {
-            BaseMultiplier *= UpgradeChain[_numberUpgradeDone].Multiplier;
+			//BaseMultiplier *= UpgradeChain[_numberUpgradeDone].Multiplier;
+            BaseMultiplier *= 2;
             UpdateDPS();
             //UpdateDPC();
             ++_numberUpgradeDone;
