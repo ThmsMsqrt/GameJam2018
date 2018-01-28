@@ -35,10 +35,15 @@ public class Item : ScriptableObject
     {
         if(Score.Value >= Cost)
         {
-            Score.Value -= Cost;
-            UpdatePrice();
-            UpdateDPS();
-            UpdateDPC();
+			//increase the nb of items by 1, pay the cost, increase the cost of next item
+			NbItems ++;
+			Score.Value -= Cost;
+			UpdatePrice();
+
+
+			//Update the DPS and DPC to fit the new nbItems
+			UpdateDPS();
+            //UpdateDPC();
         }
     }
 
@@ -49,7 +54,6 @@ public class Item : ScriptableObject
     {
         float soldItemsFactor = Mathf.Pow(NbItems, BaseMultiplier);
         Cost = Mathf.Ceil(BasePrice * soldItemsFactor);
-        NbItems += 1;
     }
 
     public void UpdateUpgradeChain()
@@ -58,19 +62,22 @@ public class Item : ScriptableObject
         {
             BaseMultiplier *= UpgradeChain[_numberUpgradeDone].Multiplier;
             UpdateDPS();
-            UpdateDPC();
+            //UpdateDPC();
             ++_numberUpgradeDone;
             Debug.Log("UpdateUpgradeChain");
         }
     }
     
     private void UpdateDPS()
-    {
-        DPS.ApplyChange(BaseMultiplier * NbItems);
+	{
+		//DPS.ApplyChange(BaseMultiplier * NbItems);
+		// redo the whole calculation becuase someone is having a trackes to when yoiu are using multipliers
+		DPS.ApplyChange(( NbItems  * DPSBase * DPSMultiplier) - ((NbItems-1) * DPSBase * DPSMultiplier));
     }
 
-    private void UpdateDPC()
-    {
-        DPC.ApplyChange(DPC.Value * NbItems);
-    }
+	//items do not do an click upgrade now
+    //private void UpdateDPC()
+    //{
+    //    DPC.ApplyChange(DPC.Value * NbItems);
+    //}
 }
