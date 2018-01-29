@@ -50,7 +50,6 @@ public class MousePositionChecker : MonoBehaviour
                     text.text = "Price : " + item.Cost.ToString();
                     break;
                 default:
-                    Debug.LogError("There's been a problem : " + text.gameObject.name);
                     break;
             }
         }
