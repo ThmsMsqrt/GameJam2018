@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00368df0feb813c468ee5eb9f020fab3, type: 3}
   m_Name: AudioManager
   m_EditorClassIdentifier: 
-  BackgroundMusic: {fileID: 0}
-  SquidClickSound: {fileID: 0}
-  SquidEvolveSound: {fileID: 8300000, guid: 67a2a3d9506141a48ab481bb3902bf76, type: 3}
-  UpgradeClickSound: {fileID: 0}
-  ItemClickSound: {fileID: 0}
+  BackgroundMusic: {fileID: 8300000, guid: e2746e3538b726e48a24170af93a2bc2, type: 3}
+  SquidClickSound: {fileID: 8300000, guid: b24d5804bcc0dbe4db0f4c2740dca60f, type: 3}
+  SquidEvolveSound: {fileID: 8300000, guid: 03fca48d960fff14685557dc5df96fd4, type: 3}
+  UpgradeClickSound: {fileID: 8300000, guid: 53c1edf9afe51754c82eadbbff4d2e5f, type: 3}
+  ItemClickSound: {fileID: 8300000, guid: 53c1edf9afe51754c82eadbbff4d2e5f, type: 3}

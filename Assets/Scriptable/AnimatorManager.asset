@@ -13,3 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animators:
   - {fileID: 9100000, guid: 374f5130a37f9514481d50430c6ca418, type: 2}
+  - {fileID: 9100000, guid: ca736b85797b3534580ea235a41662f5, type: 2}
+  - {fileID: 9100000, guid: cb845d34115f191438158ffc321e5c30, type: 2}
+  - {fileID: 9100000, guid: bb828d5e939539440a8f82555c31541b, type: 2}
+  - {fileID: 9100000, guid: 82356138b02fb1f47b9263204faa0434, type: 2}
+  - {fileID: 9100000, guid: d288125b1557528458f1d579cfe7c10d, type: 2}
+  - {fileID: 9100000, guid: 20bbf1e9dee57db41b6bc660de92de19, type: 2}
+  - {fileID: 9100000, guid: fad1621126639544ebcff88f425c9705, type: 2}
+  - {fileID: 9100000, guid: a6c5f8b415c7a2c41a6f1e2b19baa209, type: 2}
+  - {fileID: 9100000, guid: 44ea7ef62e97b6742be3b028f648a302, type: 2}
+  - {fileID: 9100000, guid: 43dc4eefd090e7e4a840dd1ab515c30d, type: 2}
+  - {fileID: 9100000, guid: b7ed8bea26635524ba1c42f6036cc6ff, type: 2}

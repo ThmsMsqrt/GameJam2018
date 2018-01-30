@@ -19,12 +19,9 @@ public class MouseFollower : MonoBehaviour {
         int toAdd;
         if (IsItem.Value)
         {
-            toAdd = 175;
+
         }
-        else
-        {
-            toAdd = -175;
-        }
+        toAdd = -120;
 
         transform.position = new Vector3(
             Input.mousePosition.x + toAdd,

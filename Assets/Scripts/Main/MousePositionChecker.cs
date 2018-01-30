@@ -41,19 +41,15 @@ public class MousePositionChecker : MonoBehaviour
             switch (text.gameObject.name)
             {
                 case ("NameText"):
-                    text.text = item.Name;
+                    text.text = item.Name + " x " + item.NbItems;
                     break;
                 case ("DescriptionText"):
                     text.text = item.Description;
-                    break;
-                case ("StupidQuoteText"):
-                    text.text = item.StupidQuote;
                     break;
                 case ("ActualPriceText"):
                     text.text = "Price : " + item.Cost.ToString();
                     break;
                 default:
-                    Debug.LogError("There's been a problem : " + text.gameObject.name);
                     break;
             }
         }
@@ -72,9 +68,6 @@ public class MousePositionChecker : MonoBehaviour
                     break;
                 case ("DescriptionText"):
                     text.text = upgrade.Description;
-                    break;
-                case ("StupidQuoteText"):
-                    text.text = upgrade.FluffText;
                     break;
                 case ("ActualPriceText"):
                     text.text = "Price : " + upgrade.Cost.ToString();

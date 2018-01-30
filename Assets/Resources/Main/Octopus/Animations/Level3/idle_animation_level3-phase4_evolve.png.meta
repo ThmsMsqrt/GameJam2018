@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 9f25690d7204f0e4cbec87b9e291d6f8
+timeCreated: 1517131466
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle_animation_level3-phase4_evolve_0
+    21300002: idle_animation_level3-phase4_evolve_1
+    21300004: idle_animation_level3-phase4_evolve_2
+    21300006: idle_animation_level3-phase4_evolve_3
+    21300008: idle_animation_level3-phase4_evolve_4
+    21300010: idle_animation_level3-phase4_evolve_5
+    21300012: idle_animation_level3-phase4_evolve_6
+    21300014: idle_animation_level3-phase4_evolve_7
+    21300016: idle_animation_level3-phase4_evolve_8
+    21300018: idle_animation_level3-phase4_evolve_9
+    21300020: idle_animation_level3-phase4_evolve_10
+    21300022: idle_animation_level3-phase4_evolve_11
+    21300024: idle_animation_level3-phase4_evolve_12
+    21300026: idle_animation_level3-phase4_evolve_13
+    21300028: idle_animation_level3-phase4_evolve_14
+    21300030: idle_animation_level3-phase4_evolve_15
+    21300032: idle_animation_level3-phase4_evolve_16
+    21300034: idle_animation_level3-phase4_evolve_17
+    21300036: idle_animation_level3-phase4_evolve_18
+    21300038: idle_animation_level3-phase4_evolve_19
+    21300040: idle_animation_level3-phase4_evolve_20
+    21300042: idle_animation_level3-phase4_evolve_21
+    21300044: idle_animation_level3-phase4_evolve_22
+    21300046: idle_animation_level3-phase4_evolve_23
+    21300048: idle_animation_level3-phase4_evolve_24
+    21300050: idle_animation_level3-phase4_evolve_25
+    21300052: idle_animation_level3-phase4_evolve_26
+    21300054: idle_animation_level3-phase4_evolve_27
+    21300056: idle_animation_level3-phase4_evolve_28
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_0
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 578
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_1
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 578
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_2
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 0
+        width: 468
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_3
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 578
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_4
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 0
+        width: 454
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_5
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 0
+        width: 440
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_6
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 438
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_7
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 316
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_8
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 82
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_9
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 84
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_10
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 83
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_11
+      rect:
+        serializedVersion: 2
+        x: 3737
+        y: 81
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_12
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 35
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_13
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 37
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_14
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 37
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_15
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 35
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_16
+      rect:
+        serializedVersion: 2
+        x: 3825
+        y: 33
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_17
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 12
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_18
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 14
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_19
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_20
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 14
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_21
+      rect:
+        serializedVersion: 2
+        x: 3781
+        y: 10
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_22
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 2
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_23
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 7
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_24
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_25
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 4
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_26
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_27
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 2
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_animation_level3-phase4_evolve_28
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 4
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
