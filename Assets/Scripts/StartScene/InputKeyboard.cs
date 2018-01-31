@@ -38,7 +38,7 @@ public class InputKeyboard : MonoBehaviour {
         {
             On3Clicked.Raise();
         }
-        else if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown("enter"))
+        else if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
         {
             OnEnterClicked.Raise();
         }

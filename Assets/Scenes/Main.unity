@@ -459,7 +459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35, y: 0.475}
   m_AnchorMax: {x: 0.65, y: 0.55}
-  m_AnchoredPosition: {x: 0, y: 76.8}
+  m_AnchoredPosition: {x: 0, y: 98.7}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163744056
@@ -478,7 +478,8 @@ MonoBehaviour:
   BackToMenuText: {fileID: 309663140}
   QuitText: {fileID: 2127345955}
   MenuPanel: {fileID: 54698150}
-  ButtonHandlerScript: {fileID: 0}
+  ButtonHandlerScript: {fileID: 535909578}
+  ValueToMove: 98.7
 --- !u!114 &163744057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,7 +1649,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 523686561}
-  - component: {fileID: 523686564}
   - component: {fileID: 523686563}
   - component: {fileID: 523686562}
   m_Layer: 5
@@ -1676,7 +1676,7 @@ RectTransform:
   m_AnchorMin: {x: 0.03, y: 0}
   m_AnchorMax: {x: 0.95, y: 0.75}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0.0000034980476}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &523686562
 MonoBehaviour:
@@ -1698,38 +1698,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 523686560}
---- !u!114 &523686564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114256254022550562, guid: 1940253f74e50a140a322116785a427f,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 523686560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Content: {fileID: 1540370217}
-  m_Horizontal: 0
-  m_Vertical: 1
-  m_MovementType: 1
-  m_Elasticity: 0.1
-  m_Inertia: 1
-  m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 10
-  m_Viewport: {fileID: 0}
-  m_HorizontalScrollbar: {fileID: 0}
-  m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 1
-  m_HorizontalScrollbarSpacing: -3
-  m_VerticalScrollbarSpacing: -3
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &535909577
 Prefab:
   m_ObjectHideFlags: 0
@@ -1835,6 +1803,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d7c6b1ea9162d84e8ccb2b9ac0f59d0, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &535909578 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114169553365495628, guid: 8d7c6b1ea9162d84e8ccb2b9ac0f59d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 535909577}
+  m_Script: {fileID: 11500000, guid: f494676050fcf014183b7bb2e94a17f8, type: 3}
 --- !u!1 &575442710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,8 +2886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -31, y: 188.5}
-  m_SizeDelta: {x: -614.1, y: -579}
+  m_AnchoredPosition: {x: -225, y: 152.5}
+  m_SizeDelta: {x: -950, y: -655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881288378
 MonoBehaviour:
@@ -2931,6 +2905,7 @@ MonoBehaviour:
     UseConstant: 0
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: dc363742acbb8d842906306221f11a4f, type: 2}
+  toAdd: 200
 --- !u!114 &881288379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3191,14 +3166,14 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 15
+    m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 70, y: 70}
+  m_CellSize: {x: 125, y: 125}
   m_Spacing: {x: 15, y: 10}
-  m_Constraint: 1
+  m_Constraint: 0
   m_ConstraintCount: 4
 --- !u!1 &1053197524
 GameObject:
@@ -5056,11 +5031,11 @@ RectTransform:
   m_Father: {fileID: 523686561}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: -0.000015258789}
-  m_SizeDelta: {x: 377, y: 156.8}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0.46443626}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1540370218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6358,15 +6333,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 0
-    m_Top: 15
+    m_Right: -5
+    m_Top: 5
     m_Bottom: 0
   m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 70, y: 70}
+  m_CellSize: {x: 80, y: 80}
   m_Spacing: {x: 15, y: 15}
-  m_Constraint: 1
+  m_Constraint: 0
   m_ConstraintCount: 4
 --- !u!114 &1861796802
 MonoBehaviour:

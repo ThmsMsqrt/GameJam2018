@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -811,6 +811,26 @@ Prefab:
       propertyPath: ButtonHandlerScript
       value: 
       objectReference: {fileID: 1407046234}
+    - target: {fileID: 224645925860235574, guid: ecd8840450ccc9d4fac04ddd51b71056,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 59.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 224645925860235574, guid: ecd8840450ccc9d4fac04ddd51b71056,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224645925860235574, guid: ecd8840450ccc9d4fac04ddd51b71056,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114366714621557834, guid: ecd8840450ccc9d4fac04ddd51b71056,
+        type: 2}
+      propertyPath: ValueToMove
+      value: 59.22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecd8840450ccc9d4fac04ddd51b71056, type: 2}
   m_IsPrefabParent: 0

@@ -72,6 +72,9 @@ public class MousePositionChecker : MonoBehaviour
                 case ("ActualPriceText"):
                     text.text = "Price : " + upgrade.Cost.ToString();
                     break;
+                case ("StupidQuoteText"):
+                    text.text = upgrade.FluffText;
+                    break;
                 default:
                     Debug.LogError("There's been a problem : " + text.gameObject.name);
                     break;

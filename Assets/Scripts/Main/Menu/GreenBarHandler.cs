@@ -9,6 +9,7 @@ public class GreenBarHandler : MonoBehaviour
     public Text ResumeText, BackToMenuText, QuitText;
     public GameObject MenuPanel;
     public ButtonHandler ButtonHandlerScript;
+    public float ValueToMove;
 
     Color32 green;
     Color32 black;
@@ -28,8 +29,8 @@ public class GreenBarHandler : MonoBehaviour
         // offsetmax = new Vector2(-right, -top);
         if (rect.offsetMin.y < 76.8f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + 76.8f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + 76.8f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + ValueToMove);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + ValueToMove);
             indexCurrentButton--;
             ChangeColorText();
         }
@@ -41,8 +42,8 @@ public class GreenBarHandler : MonoBehaviour
         // offsetmax = new Vector2(-right, -top);
         if (rect.offsetMin.y > -76.8f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - 76.8f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 76.8f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - ValueToMove);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - ValueToMove);
             indexCurrentButton++;
             ChangeColorText();
         }

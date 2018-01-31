@@ -6,9 +6,10 @@ using UnityEngine;
 public class MouseFollower : MonoBehaviour {
 
     public BoolReference IsItem;
+    public int toAdd;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
 		
 	}
@@ -16,16 +17,18 @@ public class MouseFollower : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        int toAdd;
         if (IsItem.Value)
         {
-
+            transform.position = new Vector3(
+                Input.mousePosition.x - (toAdd + 150),
+                Input.mousePosition.y + toAdd,
+                Input.mousePosition.z);
+        } else
+        {
+            transform.position = new Vector3(
+                Input.mousePosition.x - (toAdd + 150),
+                Input.mousePosition.y - toAdd,
+                Input.mousePosition.z);
         }
-        toAdd = -120;
-
-        transform.position = new Vector3(
-            Input.mousePosition.x + toAdd,
-            Input.mousePosition.y + toAdd,
-            Input.mousePosition.z + toAdd);
 	}
 }

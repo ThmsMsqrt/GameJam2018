@@ -9,6 +9,7 @@ public class GreenRectangleHandler : MonoBehaviour {
     public Sprite FirstBackground, SecondBackground, ThirdBackground;
     public GameObject BackgroundPanel;
     public ButtonHandler ButtonHandlerScript;
+    public float ValueToMove;
         
     Color32 green;
     Color32 black;
@@ -28,8 +29,8 @@ public class GreenRectangleHandler : MonoBehaviour {
         // offsetmax = new Vector2(-right, -top);
         if (rect.offsetMin.y < 40.5f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + 40.5f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + 40.5f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y + ValueToMove);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y + ValueToMove);
             indexCurrentButton--;
             ChangeColorText();
             ChangeBackground();
@@ -42,8 +43,8 @@ public class GreenRectangleHandler : MonoBehaviour {
         // offsetmax = new Vector2(-right, -top);
         if (rect.offsetMin.y > - 40.5f)
         {
-            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - 40.5f);
-            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - 40.5f);
+            rect.offsetMin = new Vector2(rect.offsetMin.x, rect.offsetMin.y - ValueToMove);
+            rect.offsetMax = new Vector2(rect.offsetMax.x, rect.offsetMax.y - ValueToMove);
             indexCurrentButton++;
             ChangeColorText();
             ChangeBackground();
